@@ -1,2 +1,2 @@
 # CPSC219
-practice run to creat a repository
+*heyooo can the real slimshady pls stand up.
