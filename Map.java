@@ -1,3 +1,5 @@
+kjkjkjk
+
 public class Map{
 	//6x6 grid
 	char[][] grid = {
