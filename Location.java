@@ -55,8 +55,9 @@ public class Location{
             }
         }
         
-        //or use this if we have setters.
-        /*public static void move(char key){
+        //or use this method if we have setters.
+        /*
+        public static void move(char key){
         if(key == 'w'){
             setY(ycoord + 1);
         }
@@ -79,8 +80,8 @@ public class Location{
             move(key);
             System.out.println("(" + xcoord + "," + ycoord + ")");
             
-            //ideally, the game will end when the HP decreases to 0(or however you guys would it to end),
-            //but for now, just press 0 to ternimate the game.
+            //ideally, the game will end when the HP decreases to 0(or however you guys would like it to end),
+            //but for now, just press 0 to terminate the game.
             if(key == '0'){
                 System.exit(0);
             }
