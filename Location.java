@@ -1,4 +1,4 @@
-
+import java.util.Random;
 import java.util.Scanner;
 
 public class Location{
@@ -36,19 +36,39 @@ public class Location{
         }
     }
 	public static void main(String[] args) {
-        Map map = new Map();
-        System.out.println("(" + xcoord + "," + ycoord + ")");
+        Random randy = new Random();
+        int ry = randy.nextInt(6);
+        Random randx = new Random(); 
+        int rx = randy.nextInt(6);
+        Player play = new Player();
+        play.print();
+        
+        Map map = new Map(); 
+        System.out.println("Your Location: (" + xcoord + "," + ycoord + ")");
         map.placePlayer('P', ycoord, xcoord);
+        
+        Potion potion = new Potion();
+        map.placePotion('H', ry, rx);
         map.print();
+
         while(xcoord >= MIN && xcoord <= MAX && ycoord >= MIN && ycoord <= MAX){
             map.placeEmpty('.', ycoord, xcoord);
             Scanner keyboard = new Scanner(System.in);
             char key = keyboard.next().charAt(0);
             move(key);
-            System.out.println("(" + xcoord + "," + ycoord + ")");
+            if (ycoord == ry && xcoord == rx){
+                play.addHP();
+                randy = new Random();
+                randx = new Random();
+                ry = randy.nextInt(6);
+                rx = randy.nextInt(6);
+                map.placePotion('H', ry, rx);
+            }
+            play.print();
+            System.out.println("Your Location: (" + xcoord + "," + ycoord + ")");
             map.placePlayer('P', ycoord, xcoord);
             map.print();
-            
+
             if(key == '0'){
                 System.exit(0);
             }
