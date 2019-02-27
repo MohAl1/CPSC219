@@ -1,5 +1,6 @@
 # CPSC219
 
+
 May I have your attention, please?
 
 Will the real Slim Shady please stand up?
@@ -23,3 +24,6 @@ nothing
 hjshkshfjfhjhklkshadkjhsfjhskfh
 
 helloooo
+=======
+compile TextApp.java
+
