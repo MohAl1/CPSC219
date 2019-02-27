@@ -31,7 +31,13 @@ public class Map{
     public void placePlayer(char player, int y, int x){
 		grid[y][x] = player;
 	}  
-
+	
+	public void placePotion(char potion, int y, int x){
+		grid[y][x] = potion;
+	}
+	public void getPotion(){
+		
+	}
 	public void placeEmpty(char empty, int y, int x){
 		grid[y][x] = empty;
 	}
