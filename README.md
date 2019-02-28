@@ -14,4 +14,5 @@ For example, the user will press 'w' then enter and the updated map will print w
 If the player attempts to move out of the map, the map will print with no movement.
 When player walks over 'H' its health stat will increase by an amount. 
 that will delete the potion and generate a new one on the map at a random location.
+User enters 0 to quit.
 
