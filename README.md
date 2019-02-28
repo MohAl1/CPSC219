@@ -1,7 +1,7 @@
 # CPSC219
 All required files for demo1 are within the branch "Demo1".
 
-1. Download all four files: Item.java, Player.java, Location.java and Map.java in the same folder. 
+1. Download all four files: Potion.java, Player.java, Location.java and Map.java in the same folder. 
 2. Compile all four one at a time using: javac
 3. Run Location.java.
 
