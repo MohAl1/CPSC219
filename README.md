@@ -16,3 +16,8 @@ When player walks over 'H' its health stat will increase by an amount.
 that will delete the potion and generate a new one on the map at a random location.
 User enters 0 to quit.
 
+###########################
+CITATIONS
+######################
+
+Demo1 is based off of Dr. Verwaal's TicTacToe game, presented in class and uploaded to D2L.
