@@ -43,6 +43,13 @@ public class Player extends GameObject {
     public void movePlayer(){
         playerM.handlePlayer();
     }
+    
+    public void setHealth(int hp){
+        health = hp;
+    }
+    public int getHealth(){
+        return health;
+    }
 
     public void printHealth(){System.out.println(health);}
     public void getHit(int dmgAmount) {
@@ -51,6 +58,12 @@ public class Player extends GameObject {
     }
     private void removePlayer() {
         map.getRoot().getChildren().remove(node);
+    }
+    
+    public void heal(int healAmount){
+        if(healAmount > 0){
+            health += healAmount;
+        }
     }
 
 
